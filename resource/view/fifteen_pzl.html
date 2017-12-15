@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>pzl</title>
+        <!-- The below script Makes IE understand the new html5
+                tags are there and applies our CSS to it -->
+        <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="../css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="../css/fifteen_pzl.css" type="text/css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(function(){
+                var panels = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+                var hole_id = 16;
+                var enable_clear = true;
+                /* for nine */
+                $('.image').click(function(){
+                    var this_id = parseInt($(this).attr("id"));
+                    
+                    var hole_index = panels.indexOf(16);
+                    var this_index = panels.indexOf(this_id);
+                    
+                    var diff = hole_index - this_index;
+                    var abs = Math.abs(diff);
+                    var sur = this_index % 4;
+                    if(abs == 1){
+                        if((sur == 0 || sur == 1 || sur == 2) && diff == 1){
+                            // 右へ
+                            $(this).css({'right':'-=202px'})                            
+                        }else if((sur == 1 || sur == 2 || sur == 3) && diff == -1){
+                            // 左へ
+                            $(this).css({'right':'+=202px'})
+                        }else{
+                            return;
+                        }
+                    }else if(abs == 4){
+                        if(diff == 4){
+                            // 下へ
+                            $(this).css({'top':'+=202px'})
+                        }else if(diff == -4){
+                            // 上へ
+                            $(this).css({'top':'-=202px'})
+                        }else{
+                            return;
+                        }
+
+                    }else{
+                        console.log("hole:" + hole_index + ":" + "this:" + this_index + ":" + abs)
+                        return;
+                    }
+
+
+                    panels[hole_index] = this_id;
+                    panels[this_index] = 16;
+                    hole_id = this_id;
+                    if(enable_clear && this_index == 15){
+                        let clear_flg = true;
+                        
+                        panels.forEach(function(val,index){
+                            if(val != index+1){
+                                clear_flg = false;
+                                return;
+                            }
+                        });
+                        if(clear_flg){
+                            alert("clear");
+                        }
+                    }
+                });
+                function randomize(randomize_count){
+                    var enable_clear = false;
+                    let rnd = Math.floor(Math.random() * 10000);
+                    let click_target = 0;
+                    if(rnd < 2500){
+                        click_target = hole_id - 4;
+                        if(click_target < 1){
+                            click_target = click_target + 8;
+                        }
+                    }else if(rnd < 5000){
+                        click_target = hole_id + 4;
+                        if(click_target > 16){
+                            click_target = click_target - 8;
+                        }
+                    }else if(rnd < 7500){
+                        click_target = hole_id - 1;
+                        if(click_target == 0 || click_target % 4 == 0){
+                            click_target = click_target + 2;
+                        }
+                    }else{
+                        click_target = hole_id + 1;
+                        if(click_target % 4 == 1){
+                            click_target = click_target - 2;
+                        }
+                    }
+                    if(before_target != click_target){
+                    console.log(hole_id + ":"  +click_target + ":" + before_target);
+                        $.when(
+                            $('#' + click_target).trigger("click")
+                        ).done(function(){ 
+                            // 再帰的呼び出し
+                            if(randomize_count < 1000){
+                                randomize_count = randomize_count + 1
+                                before_target = click_target;
+                                randomize(randomize_count);
+                            }else{
+                                console.log(randomize_count)
+                                var enable_clear = true;
+                            }
+                        });
+                    }else{
+                        randomize_count
+                        randomize(randomize_count);
+                    }
+                }
+                for(var i = 0;i < 1; i++){
+                    var randomize_count = 0;
+                    var before_target = 99;
+                    randomize(randomize_count);
+                }
+            });
+        </script>
+        
+        <div class="nine_container">
+            <div class="item item1">
+                <div class="image image1" id="1"></div>
+            </div>
+            <div class="item item2">
+                <div class="image image2" id="2"></div>
+            </div>
+            <div class="item item3">
+                <div class="image image3" id="3"></div>
+            </div>
+            <div class="item item4">
+                <div class="image image4" id="4"></div>
+            </div>
+            <div class="item item5">
+                <div class="image image5" id="5"></div>
+            </div>
+            <div class="item item6">
+                <div class="image image6" id="6"></div>
+            </div>
+            <div class="item item7">
+                <div class="image image7" id="7"></div>
+            </div>
+            <div class="item item8">
+                <div class="image image8" id="8"></div>
+            </div>
+            <div class="item item9">
+                <div class="image image9" id="9"></div>
+            </div>
+            <div class="item item10">
+                <div class="image image10" id="10"></div>
+            </div>
+            <div class="item item11">
+                <div class="image image11" id="11"></div>
+            </div>
+            <div class="item item12">
+                <div class="image image12" id="12"></div>
+            </div>
+            <div class="item item13">
+                <div class="image image13" id="13"></div>
+            </div>
+            <div class="item item14">
+                <div class="image image14" id="14"></div>
+            </div>
+            <div class="item item15">
+                <div class="image image15" id="15"></div>
+            </div>
+            <div class="item item16">
+                <div class="image image16" id="16"></div>
+            </div>
+
+        </div>
+    </body>
+    </div>
+</html>

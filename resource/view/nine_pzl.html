@@ -9,14 +9,15 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <link rel="stylesheet" href="../css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="../css/pzl.css" type="text/css" />
+        <link rel="stylesheet" href="../css/nine_pzl.css" type="text/css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
         <script>
             $(function(){
                 var panels = [1,2,3,4,5,6,7,8,9];
-                var nine_hole_id = 9;
+                var hole_id = 9;
+                var enable_clear = true;
                 /* for nine */
                 $('.image').click(function(){
                     var this_id = parseInt($(this).attr("id"));
@@ -43,7 +44,7 @@
                             // 上へ
                             $(this).css({'top':'-=252.5px'})
                         }else{
-                            return ;
+                            return;
                         }
 
                     }else{
@@ -52,9 +53,11 @@
 
 
                     panels[hole_index] = this_id;
-                    panels[this_index] = nine_hole_id;
-                    if(enable_clear && nine_hole_id == 9){
+                    panels[this_index] = 9;
+                    hole_id = this_id;
+                    if(enable_clear && this_index == 8){
                         let clear_flg = true;
+                        
                         panels.forEach(function(val,index){
                             if(val != index+1){
                                 clear_flg = false;
@@ -62,42 +65,40 @@
                             }
                         });
                         if(clear_flg){
-                            console.log("clear!");
+                            alert("clear");
                         }
                     }
                 });
                 function randomize(randomize_count){
+                    var enable_clear = false;
                     let rnd = Math.floor(Math.random() * 100);
                     let click_target = 0;
                     if(rnd < 25){
-                        click_target = nine_hole_id - 3;
+                        click_target = hole_id - 3;
                         if(click_target < 0){
                             click_target = click_target + 6;
                         }
                     }else if(rnd < 50){
-                        click_target = nine_hole_id + 3;
+                        click_target = hole_id + 3;
                         if(click_target > 9){
                             click_target = click_target - 6;
                         }
                     }else if(rnd < 75){
-                        click_target = nine_hole_id - 1;
+                        click_target = hole_id - 1;
                         if(click_target == 0 || click_target % 3 == 0){
                             click_target = click_target + 2;
                         }
                     }else{
-                        click_target = nine_hole_id + 1;
+                        click_target = hole_id + 1;
                         if(click_target % 3 == 1){
                             click_target = click_target - 2;
                         }
                     }
-                    console.log("穴："+nine_hole_id)
-                    console.log(click_target)
-
                     $.when(
                         $('#' + click_target).trigger("click")
                     ).done(function(){ 
                         // 再帰的呼び出し
-                        if(randomize_count < 10){
+                        if(randomize_count < 150){
                             randomize_count = randomize_count + 1
                             randomize(randomize_count);
                         }else{
@@ -108,7 +109,6 @@
                     ;
                 }
                 var randomize_count = 0;
-                var enable_clear = false;
                 randomize(randomize_count);
             });
         </script>
