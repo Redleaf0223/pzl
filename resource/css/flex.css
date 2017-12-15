@@ -1,0 +1,20 @@
+.container {
+	margin: auto;
+	margin-top: 45px;
+	display: flex;
+	width: 750px;
+	height:750px;
+	background-color: #888888;
+	padding:25px;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+
+.item{
+	background-color: #53eaef;
+	border: solid 5px;
+	height:250px;
+	width:250px;
+	align-items: center;
+	border-collapse:collapse;
+}

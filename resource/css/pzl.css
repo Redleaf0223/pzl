@@ -1,0 +1,142 @@
+.nine_container {
+	margin: auto;
+	margin-top: 45px;
+	display: flex;
+	width: 760px;
+	height:760px;
+	background-color: #888888;
+	padding:25px;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+/* flex-contentここから */
+.item{
+	height:250px;
+	width:250px;
+	align-items: center;
+	position: relative;
+}
+
+.item1{
+	border-top:solid 2.5px;
+	border-left:solid 2.5px;
+}
+.item2{
+	border-top:solid 2.5px;
+	border-left:solid 2.5px;
+	border-right:solid 2.5px;
+}
+.item3{
+	border-top:solid 2.5px;
+	border-right:solid 2.5px;
+}
+.item4{
+	border-top:solid 2.5px;
+	border-bottom:solid 2.5px;
+	border-left:solid 2.5px;
+}
+.item5{
+	border-top:solid 2.5px;
+	border-bottom:solid 2.5px;
+	border-left:solid 2.5px;
+	border-right:solid 2.5px;
+}
+.item6{
+	border-top:solid 2.5px;
+	border-bottom:solid 2.5px;
+	border-right:solid 2.5px;
+}
+.item7{
+	border-bottom:solid 2.5px;
+	border-left:solid 2.5px;
+}
+.item8{
+	border-bottom:solid 2.5px;
+	border-left:solid 2.5px;
+	border-right:solid 2.5px;
+}
+.item9{
+	border-bottom:solid 2.5px;
+	border-right:solid 2.5px;
+}
+/* flex-contentここまで */
+
+/* imagesここから */
+.image{
+	width: 100%;
+	height: 100%;
+	background-image:url("../images/無題.png"); 
+	position: absolute;
+	z-index: 10;
+}
+/*
+	background-position-x:右から;
+	background-position-y:上から;
+*/
+.image1{
+	background-position-x:750px;
+	background-position-y:0px;
+	top:0px;
+	right: 0px;
+}
+
+.image2{
+	background-position-x:500px;
+	background-position-y:0px;
+	top:0px;
+	right: 0px;
+}
+
+.image3{
+	background-position-x:250px;
+	background-position-y:0px;
+	top:0px;
+	right: 0px;
+}
+
+.image4{
+	background-position-x:750px;
+	background-position-y:500px;
+	top:0px;
+	right: 0px;
+}
+
+.image5{
+	background-position-x:500px;
+	background-position-y:500px;
+	top:0px;
+	right: 0px;
+}
+
+.image6{
+	background-position-x:250px;
+	background-position-y:500px;
+	top:0px;
+	right: 0px;
+}
+
+.image7{
+	background-position-x:750px;
+	background-position-y:250px;
+	top:0px;
+	right: 0px;
+}
+
+.image8{
+	background-position-x:500px;
+	background-position-y:250px;
+	top:0px;
+	right: 0px;
+}
+
+.image9{
+	background-image: none;
+	background-color: #888888;
+	background-position-x:250px;
+	background-position-y:250px;
+	top:0px;
+	right: 0px;
+	z-index: -1;
+}
+
+/* imagesここまで */
