@@ -1,0 +1,151 @@
+// 答え
+var answer = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+// 初期
+var panels = [12,0,2,9,10,11,15,7,6,8,3,4,13,1,14,5]
+/*
+[12,0,2,9,10,11,15,7,6,8,3,4,13,1,14,5]
+12 -1 0 6 6 6 9 0 -2 -1 -7 -7 1 -12 0 -10 : 0
+
+[12,0,2,9,10,15,11,7,6,8,3,4,13,1,14,5]
+12 -1 0 6 6 10 5 0 -2 -1 -7 -7 1 -12 0 -10 :-4
+
+[12,0,2,9,10,11,7,15,6,8,3,4,13,1,14,5]
+12 -1 0 6 6 6 1 8 -2 -1 -7 -7 1 -12 0 -10 :0
+
+[12,0,15,9,10,11,2,7,6,8,3,4,13,1,14,5]
+12 -1 13 6 6 6 -4 8 -2 -1 -7 -7 1 -12 0 -10 :9
+
+[12,0,2,9,10,11,3,7,6,8,15,4,13,1,14,5]
+12 -1 0 6 6 6 -3 8 -2 -1 5 -7 1 -12 0 -10 :8
+
+*/
+
+
+/*
+並び替えのルール
+入れ替え可能なのは
+    1. 15と隣接する要素
+        ただし、以下のモノは不可能
+        4番目⇔5番目
+        8番目⇔9番目
+        12番目⇔13番目
+    2. 15と4マス離れた要素
+    
+*/
+
+/* 
+案１の実装
+    15から見て左右と上下を取得
+    その中から、16の位置に最も近い数値と入替を実行する
+    ただし、並び替えのルールは守ること
+*/
+var clear_flg = false
+var count = 0
+
+while(count < 100){
+    count++
+    var hole = panels.indexOf(15);
+    var targets = [];
+    console.log(panels)
+    var left = panels.concat();
+    var right = panels.concat();
+    var shita = panels.concat();
+    var ue = panels.concat();
+
+
+    var left_omomi = 0;
+    var right_omomi = 0;
+    var shita_omomi = 0;
+    var ue_omomi = 0;
+    
+    if(hole % 4 != 3){
+        left[hole] = left[hole + 1];
+        left[hole + 1] = 15;
+    }else{
+        left = [99,99,99,99]
+    }
+    
+    if(hole % 4 !== 0){
+        right[hole] = right[hole - 1];
+        right[hole - 1] = 15;
+    }else{
+        right = [99,99,99,99]
+    }
+    
+    if(hole > 3){
+        shita[hole] = shita[hole - 4];
+        shita[hole - 4] = 15;
+    }else{
+        shita = [99,99,99,99]
+    }
+    
+    if(hole < 12){
+        ue[hole] = ue[hole + 4];
+        ue[hole + 4] = 15;
+    }else{
+        ue = [99,99,99,99]
+    }
+    
+    if(left.length > 0){
+        for(var i = 0;i < 16;i++){
+           left_omomi += Math.abs(left[i] - i);
+       }     
+    }
+    
+    if(right.length > 0){
+        for(var i = 0;i < 16;i++){
+           right_omomi += Math.abs(right[i] - i);
+       }     
+    }
+
+    if(shita.length > 0){
+        for(var i = 0;i < 16;i++){
+           shita_omomi += Math.abs(shita[i] - i);
+       }     
+    }
+
+    if(ue.length > 0){
+        for(var i = 0;i < 16;i++){
+           ue_omomi += Math.abs(ue[i] - i);
+       }     
+    }
+    
+    var answer_omomi = 0
+    if(answer.length > 0){
+        for(var i = 0;i < 16;i++){
+           answer_omomi += Math.abs(answer[i] - i);
+       }     
+    }
+
+    console.log(left)
+    console.log(right)
+    console.log(shita)
+    console.log(ue)
+
+    console.log("left:" + left_omomi + "|right:" + right_omomi + "|shita:" + shita_omomi + "|ue:" + ue_omomi + "|answer:" + answer_omomi);
+    
+    sorts = [left_omomi ,right_omomi ,shita_omomi ,ue_omomi ].sort(
+        function(a,b){
+            return (a < b ? -1 : 1);
+        }
+    );
+
+    if(sorts[0] == left_omomi){
+        panels = left
+    }
+
+    if(sorts[0] == right_omomi){
+        panels = right
+    }
+
+    if(sorts[0] == shita_omomi){
+        panels = shita
+    }
+
+    if(sorts[0] == ue_omomi){
+        panels = ue
+    }
+
+    clear_flg = true;
+}
