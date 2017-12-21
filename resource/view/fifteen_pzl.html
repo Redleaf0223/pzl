@@ -16,7 +16,7 @@
         <script>
             $(function(){
                 var panels = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
-                var hole_id = 16;
+                var hole_index = 15;
                 var enable_clear = true;
                 /* for nine */
                 $('.image').click(function(){
@@ -50,14 +50,12 @@
                         }
 
                     }else{
-                        console.log("hole:" + hole_index + ":" + "this:" + this_index + ":" + abs)
                         return;
                     }
 
 
                     panels[hole_index] = this_id;
                     panels[this_index] = 16;
-                    hole_id = this_id;
                     if(enable_clear && this_index == 15){
                         let clear_flg = true;
                         
@@ -73,43 +71,42 @@
                     }
                 });
                 function randomize(randomize_count){
-                    var enable_clear = false;
+                    enable_clear = false;
                     let rnd = Math.floor(Math.random() * 10000);
                     let click_target = 0;
+                    var hole_index = panels.indexOf(16);
                     if(rnd < 2500){
-                        click_target = hole_id - 4;
-                        if(click_target < 1){
+                        click_target = hole_index - 4;
+                        if(click_target < 0){
                             click_target = click_target + 8;
                         }
                     }else if(rnd < 5000){
-                        click_target = hole_id + 4;
-                        if(click_target > 16){
+                        click_target = hole_index + 4;
+                        if(click_target > 15){
                             click_target = click_target - 8;
                         }
                     }else if(rnd < 7500){
-                        click_target = hole_id - 1;
-                        if(click_target == 0 || click_target % 4 == 0){
+                        click_target = hole_index - 1;
+                        if(click_target == -1 || click_target % 4 == -1){
                             click_target = click_target + 2;
                         }
                     }else{
-                        click_target = hole_id + 1;
-                        if(click_target % 4 == 1){
+                        click_target = hole_index + 1;
+                        if(click_target % 4 == 0){
                             click_target = click_target - 2;
                         }
                     }
                     if(before_target != click_target){
-                    console.log(hole_id + ":"  +click_target + ":" + before_target);
                         $.when(
-                            $('#' + click_target).trigger("click")
                         ).done(function(){ 
                             // 再帰的呼び出し
+                            $('#' + panels[click_target]).trigger("click")
                             if(randomize_count < 1000){
                                 randomize_count = randomize_count + 1
                                 before_target = click_target;
                                 randomize(randomize_count);
                             }else{
-                                console.log(randomize_count)
-                                var enable_clear = true;
+                                enable_clear = true;
                             }
                         });
                     }else{
