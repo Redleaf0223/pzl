@@ -1,5 +1,10 @@
-.nine_container {
-	margin: auto;
+body{
+	overflow: hidden;
+}
+
+.fifteen_container {
+	margin-left: 200px;
+	margin-right: 0;
 	margin-top: 45px;
 	display: flex;
 	width: 810px;
@@ -8,6 +13,7 @@
 	padding:25px;
 	flex-wrap: wrap;
 	justify-content:center;
+	float: left;
 }
 /* flex-contentここから */
 .item{
@@ -220,4 +226,180 @@
 }
 
 
+.answer_box{
+	float:right;
+	height:256px;
+	width: 256px;
+	margin-right: 300px;
+	margin-top: 164px;
+	background-size:256px 256px;
+	background-image:url("../images/無題_16.png"); 
+}
+
+.hahen{
+	position: absolute;
+	top:50%;
+	left:50%;
+	width: 0;
+	height: 0;
+	float: left;
+	transform-origin: 50% 50%;
+	z-index: 400;
+}
+
+.hahen_1{
+	border: 20px solid transparent;
+	border-bottom: hidden;
+	border-top: 10px solid #f00;
+	border-bottom: hidden;
+}
+
+.hahen_2{
+	border: 10px solid transparent;
+	border-top: 20px solid #f00;
+	border-bottom: hidden;
+}
+
+.hahen_3{
+	border: 5px solid transparent;
+	border-top: 10px solid #f00;
+	border-bottom: hidden;
+}
+
+.hahen_4{
+	border: 20px solid transparent;
+	border-top: 10px solid #f00;
+	border-bottom: hidden;
+}
+
+.hahen_5{
+	border: 15px solid transparent;
+	border-top: 13px solid #f00;
+	border-right: 2px;
+	border-bottom: hidden;
+}
+
+.hahen_6{
+	border: 3px solid transparent;
+	border-top: 20px solid #f00;
+	border-bottom: hidden;
+}
+
+.hahen_7{
+	border: 6px solid transparent;
+	border-top: 8px solid #f00;
+	border-left: 9px;
+	border-bottom: hidden;
+}
+
+.hahen_8{
+	border: 11px solid transparent;
+	border-bottom: 8px solid #f00;
+	border-right: 19px;
+	border-top: hidden;
+}
+
+.hahen_9{
+	border: 13px solid transparent;
+	border-top: 11px solid #f00;
+	border-right: 12px;
+	border-bottom: hidden;
+}
+
+.hahen_10{
+	border: 10px solid transparent;
+	border-top: 5px solid #f00;
+	border-right: 3px;
+	border-bottom: hidden;
+}
+
+.hahen_11{
+	border: 10px solid transparent;
+	border-top: 5px solid #f00;
+	border-right: 3px;
+	border-bottom: hidden;
+}
+
+.hahen_12{
+	border: 6px solid transparent;
+	border-top: 15px solid #f00;
+	border-right: 13px;
+	border-bottom: hidden;
+}
+
+.hahen_13{
+	border: 9px solid transparent;
+	border-top: 11px solid #f00;
+	border-right: 16px;
+	border-bottom: hidden;
+}
+
+.hahen_14{
+	border: 19px solid transparent;
+	border-top: 20px solid #f00;
+	border-right: 24px;
+	border-bottom: hidden;
+}
+
+.hahen_15{
+	border: 26px solid transparent;
+	border-top: 24px solid #f00;
+	border-right: 13px;
+	border-bottom: hidden;
+}
+
+.hahen_16{
+	border: 36px solid transparent;
+	border-top: 28px solid #f00;
+	border-right: 43px;
+	border-bottom: hidden;
+}
+
+.hahen_16{
+	border: 44px solid transparent;
+	border-top: 36px solid #f00;
+	border-left: 11px;
+	border-bottom: hidden;
+}
+
+.hahen_17{
+	border: 44px solid transparent;
+	border-top: 36px solid #f00;
+	border-left: 11px;
+	border-bottom: hidden;
+}
+
+.hahen_18{
+	border: 14px solid transparent;
+	border-top: 36px solid #f00;
+	border-left: 11px;
+	border-bottom: hidden;
+}
+
+.hahen_19{
+	border: 4px solid transparent;
+	border-top: 56px solid #f00;
+	border-left: 21px;
+	border-bottom: hidden;
+}
+
+.hahen_20{
+	border: 40px solid transparent;
+	border-top: 44px solid #f00;
+	border-left: 23px;
+	border-bottom: hidden;
+}
+
+.hahen_21{
+	border: 80px solid transparent;
+	border-top: 36px solid #f00;
+	border-right: 11px;
+	border-bottom: hidden;
+}
+.hahen_22{
+	border: 100px solid transparent;
+	border-top: 44px solid #f00;
+	border-left: 8px;
+	border-bottom: hidden;
+}
 /* imagesここまで */
