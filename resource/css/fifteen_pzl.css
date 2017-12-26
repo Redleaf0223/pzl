@@ -105,7 +105,7 @@ body{
 	width: 100%;
 	height: 100%;
 	background-image:url("../images/無題_16.png"); 
-	background-size:800px 800px;
+	background-size:806px 806px;
 	position: absolute;
 	z-index: 10;
 }
@@ -114,19 +114,19 @@ body{
 	background-position-y:上から;
 */
 .image0{
-	background-position-x:800px;
+	background-position-x:806px;
 	background-position-y:0px;
 	top:0px;
 	right: 0px;
 }
 .image1{
-	background-position-x:600px;
+	background-position-x:604px;
 	background-position-y:0px;
 	top:0px;
 	right: 0px;
 }
 .image2{
-	background-position-x:400px;
+	background-position-x:402px;
 	background-position-y:0px;
 	top:0px;
 	right: 0px;
@@ -139,85 +139,83 @@ body{
 }
 
 .image4{
-	background-position-x:800px;
-	background-position-y:600px;
+	background-position-x:806px;
+	background-position-y:604px;
 	top:0px;
 	right: 0px;
 }
 
 .image5{
-	background-position-x:600px;
-	background-position-y:600px;
+	background-position-x:604px;
+	background-position-y:604px;
 	top:0px;
 	right: 0px;
 }
 
 .image6{
-	background-position-x:400px;
-	background-position-y:600px;
+	background-position-x:402px;
+	background-position-y:604px;
 	top:0px;
 	right: 0px;
 }
 
 .image7{
 	background-position-x:200px;
-	background-position-y:600px;
+	background-position-y:604px;
 	top:0px;
 	right: 0px;
 }
 
 .image8{
-	background-position-x:800px;
-	background-position-y:400px;
+	background-position-x:806px;
+	background-position-y:402px;
 	top:0px;
 	right: 0px;
 }
 
 .image9{
-	background-position-x:600px;
-	background-position-y:400px;
+	background-position-x:604px;
+	background-position-y:402px;
 	top:0px;
 	right: 0px;
 }
 
 .image10{
-	background-position-x:400px;
-	background-position-y:400px;
+	background-position-x:402px;
+	background-position-y:402px;
 	top:0px;
 	right: 0px;
 }
 
 .image11{
 	background-position-x:200px;
-	background-position-y:400px;
+	background-position-y:402px;
 	top:0px;
 	right: 0px;
 }
 
 .image12{
-	background-position-x:800px;
+	background-position-x:806px;
 	background-position-y:200px;
 	top:0px;
 	right: 0px;
 }
 
 .image13{
-	background-position-x:600px;
+	background-position-x:604px;
 	background-position-y:200px;
 	top:0px;
 	right: 0px;
 }
 
 .image14{
-	background-position-x:400px;
+	background-position-x:402px;
 	background-position-y:200px;
 	top:0px;
 	right: 0px;
 }
 
 .image15{
-	background-image: none;
-	background-color: #888888;
 	background-position-x:200px;
 	background-position-y:200px;
 	top:0px;
@@ -225,6 +223,7 @@ body{
 	z-index: -1;
 }
 
+/* imagesここまで */
 
 .answer_box{
 	float:right;
@@ -234,6 +233,15 @@ body{
 	margin-top: 164px;
 	background-size:256px 256px;
 	background-image:url("../images/無題_16.png"); 
+}
+
+#crack{
+	height:200px;
+	width:200px;
+	background-color: #888888;
+	position: relative;
+	z-index:400;
+	overflow: hidden;
 }
 
 .hahen{
@@ -250,156 +258,234 @@ body{
 .hahen_1{
 	border: 20px solid transparent;
 	border-bottom: hidden;
-	border-top: 10px solid #f00;
+	border-top: 10px solid #888888;
 	border-bottom: hidden;
 }
 
 .hahen_2{
 	border: 10px solid transparent;
-	border-top: 20px solid #f00;
+	border-top: 20px solid #888888;
 	border-bottom: hidden;
 }
 
 .hahen_3{
 	border: 5px solid transparent;
-	border-top: 10px solid #f00;
+	border-top: 10px solid #888888;
 	border-bottom: hidden;
 }
 
 .hahen_4{
 	border: 20px solid transparent;
-	border-top: 10px solid #f00;
+	border-top: 10px solid #888888;
 	border-bottom: hidden;
 }
 
 .hahen_5{
 	border: 15px solid transparent;
-	border-top: 13px solid #f00;
+	border-top: 13px solid #888888;
 	border-right: 2px;
 	border-bottom: hidden;
 }
 
 .hahen_6{
 	border: 3px solid transparent;
-	border-top: 20px solid #f00;
+	border-top: 20px solid #888888;
 	border-bottom: hidden;
 }
 
 .hahen_7{
 	border: 6px solid transparent;
-	border-top: 8px solid #f00;
+	border-top: 8px solid #888888;
 	border-left: 9px;
 	border-bottom: hidden;
 }
 
 .hahen_8{
 	border: 11px solid transparent;
-	border-bottom: 8px solid #f00;
+	border-bottom: 8px solid #888888;
 	border-right: 19px;
 	border-top: hidden;
 }
 
 .hahen_9{
 	border: 13px solid transparent;
-	border-top: 11px solid #f00;
+	border-top: 11px solid #888888;
 	border-right: 12px;
 	border-bottom: hidden;
 }
 
 .hahen_10{
 	border: 10px solid transparent;
-	border-top: 5px solid #f00;
+	border-top: 5px solid #888888;
 	border-right: 3px;
 	border-bottom: hidden;
 }
 
 .hahen_11{
 	border: 10px solid transparent;
-	border-top: 5px solid #f00;
+	border-top: 5px solid #888888;
 	border-right: 3px;
 	border-bottom: hidden;
 }
 
 .hahen_12{
 	border: 6px solid transparent;
-	border-top: 15px solid #f00;
+	border-top: 15px solid #888888;
 	border-right: 13px;
 	border-bottom: hidden;
 }
 
 .hahen_13{
 	border: 9px solid transparent;
-	border-top: 11px solid #f00;
+	border-top: 11px solid #888888;
 	border-right: 16px;
 	border-bottom: hidden;
 }
 
 .hahen_14{
 	border: 19px solid transparent;
-	border-top: 20px solid #f00;
+	border-top: 20px solid #888888;
 	border-right: 24px;
 	border-bottom: hidden;
 }
 
 .hahen_15{
 	border: 26px solid transparent;
-	border-top: 24px solid #f00;
+	border-top: 24px solid #888888;
 	border-right: 13px;
 	border-bottom: hidden;
 }
 
 .hahen_16{
 	border: 36px solid transparent;
-	border-top: 28px solid #f00;
+	border-top: 28px solid #888888;
 	border-right: 43px;
 	border-bottom: hidden;
 }
 
 .hahen_16{
-	border: 44px solid transparent;
-	border-top: 36px solid #f00;
+	border: 4px solid transparent;
+	border-top: 6px solid #888888;
 	border-left: 11px;
 	border-bottom: hidden;
 }
 
 .hahen_17{
-	border: 44px solid transparent;
-	border-top: 36px solid #f00;
+	border: 3px solid transparent;
+	border-top: 3px solid #888888;
 	border-left: 11px;
 	border-bottom: hidden;
 }
 
 .hahen_18{
 	border: 14px solid transparent;
-	border-top: 36px solid #f00;
+	border-top: 36px solid #888888;
 	border-left: 11px;
 	border-bottom: hidden;
 }
 
 .hahen_19{
 	border: 4px solid transparent;
-	border-top: 56px solid #f00;
-	border-left: 21px;
+	border-top: 6px solid #888888;
+	border-left: 2px;
 	border-bottom: hidden;
 }
 
 .hahen_20{
-	border: 40px solid transparent;
-	border-top: 44px solid #f00;
+	border: 12px solid transparent;
+	border-top: 2px solid #888888;
 	border-left: 23px;
 	border-bottom: hidden;
 }
 
 .hahen_21{
-	border: 80px solid transparent;
-	border-top: 36px solid #f00;
+	border: 8px solid transparent;
+	border-top: 6px solid #888888;
 	border-right: 11px;
 	border-bottom: hidden;
 }
+
 .hahen_22{
-	border: 100px solid transparent;
-	border-top: 44px solid #f00;
+	border: 10px solid transparent;
+	border-top: 14px solid #888888;
 	border-left: 8px;
 	border-bottom: hidden;
 }
-/* imagesここまで */
+
+.hahen_23{
+	border: 7px solid transparent;
+	border-top: 9px solid #888888;
+	border-right: 16px;
+	border-bottom: hidden;
+}
+
+.hahen_24{
+	border: 33px solid transparent;
+	border-top: 24px solid #888888;
+	border-left: 18px;
+	border-bottom: hidden;
+}
+/* 特殊破片ここから */
+.hahen_25{
+	border: 14px solid transparent;
+	border-top: 18px solid #888888;
+	border-right: 22px;
+	border-bottom: hidden;
+	-webkit-box-reflect: below -14px;
+}
+
+.hahen_26{
+	border: 11px solid transparent;
+	border-top: 16px solid #888888;
+	border-right: 23px;
+	border-bottom: hidden;
+	-webkit-box-reflect: below -16px;
+}
+
+.hahen_27{
+	border: 24px solid transparent;
+	border-top: 20px solid #888888;
+	border-bottom: hidden;
+	-webkit-box-reflect: below -24px;
+}
+
+.hahen_28{
+	border: 19px solid transparent;
+	border-top: 11px solid #888888;
+	border-right: 43px;
+	border-bottom: hidden;
+}
+
+.hahen_29{
+	border: 4px solid transparent;
+	border-top: 1px solid #888888;
+	border-right: 2px;
+	border-bottom: hidden;
+}
+
+.hahen_30{
+	border: 6px solid transparent;
+	border-top: 6px solid #888888;
+	border-right: 3px;
+	border-bottom: hidden;
+}
+
+.hahen_31{
+	border: 5px solid transparent;
+	border-top: 44px solid #888888;
+	border-right: 18px;
+	border-bottom: hidden;
+}
+
+.hahen_32{
+	border: 16px solid transparent;
+	border-top: 3px solid #888888;
+	border-right: 4px;
+	border-bottom: hidden;
+}
+
+
+
+
+
+/* 特殊破片ここまで */

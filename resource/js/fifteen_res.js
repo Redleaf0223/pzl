@@ -1,92 +1,160 @@
-    function clear_animation(){
-        // setTimeout(function(){
-        //     $("#0").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1000);
-        // setTimeout(function(){
-        //     $("#1").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1100);
+    // 左上から順番に
+    function clear_animation_A(){
+        var count = 0;
+        for(var a = 0;a < 15;a++){
+            var time = (a * 200) + 1000;
+            setTimeout(function(){
+                $("#" + count).css({ transition: 'all 0.8s',transform: 'rotateZ( 360deg )' });
+                count++;
+            },time);
+        }
+        for(var h = 1;h < 33;h++){
+            $(".item15").append('<div class="hahen hahen_' + h + '"></div>');
+        }
+        // $(".item15").append('<div id="crack"></div>')
+        setTimeout(function(){
+            break_down();
+        },4500);
 
-        // setTimeout(function(){
-        //     $("#2").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1200);
+        setTimeout(function(){
+            $(".image15").css("z-index","1");
+        },5000);
+    }
+    
+    // 左上から斜めのアレ
+    function clear_animation_B(){
+        var transitions = '1.0s'
+        setTimeout(function(){
 
-        // setTimeout(function(){
-        //     $("#3").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1300);
+            $("#0").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+        },1000);
 
-        // setTimeout(function(){
-        //     $("#4").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1400);
+        setTimeout(function(){
+            $("#1").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#4").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+        },1500);
 
-        // setTimeout(function(){
-        //     $("#5").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1500);
+        setTimeout(function(){
+            $("#2").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#5").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#8").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+        },2000);
 
-        // setTimeout(function(){
-        //     $("#6").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1600);
+        setTimeout(function(){
+            $("#3").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#6").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#9").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#12").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+        },2500);
 
-        // setTimeout(function(){
-        //     $("#7").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1700);
+        setTimeout(function(){
+            $("#7").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#10").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#13").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+        },3000);
 
-        // setTimeout(function(){
-        //     $("#8").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1800);
+        setTimeout(function(){
+            $("#11").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+            $("#14").css({ transition: transitions,transform: 'rotateZ( 360deg )' });
+        },3500);
 
-        // setTimeout(function(){
-        //     $("#9").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },1900);
+        setTimeout(function(){
+            $(".image15").css("z-index","1");
+            $("#15").css({ transition: '3.0s',transform: 'rotateZ( 1800deg )' });
+        },4500);
 
-        // setTimeout(function(){
-        //     $("#10").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },2000);
-
-        // setTimeout(function(){
-        //     $("#11").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },2100);
-
-        // setTimeout(function(){
-        //     $("#12").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },2200);
-
-        // setTimeout(function(){
-        //     $("#13").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },2300);
-
-        // setTimeout(function(){
-        //     $("#14").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },2400);
-
-        // setTimeout(function(){
-        //     $("#15").css({ transition: '1.0s',transform: 'rotateZ( 360deg )' })
-        // },2500);
-        break_down();
     }
 
+    // 上からくるくる
+    function clear_animation_C(){
+        var transitions = '1.0s'
+        setTimeout(function(){
+            $("#15").css({ transition: transitions,transform: 'rotateX( 90deg )' });
+            $("#0").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#1").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#2").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#3").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+
+        },1000);
+
+        setTimeout(function(){
+            $("#4").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#5").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#6").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#7").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+        },1500);
+
+        setTimeout(function(){
+            $("#8").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#9").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#10").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#11").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+        },2000);
+
+        setTimeout(function(){
+            $("#12").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#13").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#14").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+            $("#15").css({ transition: transitions,transform: 'rotateX( 360deg )' });
+        },2500);
+
+        setTimeout(function(){
+            $(".image15").css("z-index","1");
+        },2650);
+
+        setTimeout(function(){
+        },3500);
+
+        setTimeout(function(){
+        },4500);
+
+    }
+
+    // へび
+    function clear_animation_E(){
+        var arr = [3,2,1,0,4,5,6,7,11,10,9,8,12,13,14];
+        var count = 0;
+        for(var a = 0;a < 15;a++){
+            var time = (a * 200) + 1000
+            setTimeout(function(){
+                $("#" + arr[count]).css({ transition: 'all 0.8s',transform: 'rotateZ( 360deg )' });
+                count++;
+            },time);
+        }
+        // for(var h = 1;h < 33;h++){
+        //     $(".item15").append('<div class="hahen hahen_' + h + '"></div>');
+        // }
+        setTimeout(function(){
+            $(".item15").css({ transition: 'all 8s',transform: 'rotateZ( 3600deg )' });
+            count++;
+        },4000);
+
+        // $(".item15").append('<div id="crack"></div>')
+        setTimeout(function(){
+            // break_down();
+        },4500);
+
+        setTimeout(function(){
+            // $(".image15").css("z-index","1");
+        },5000);
+    }
+
+    // ランダムに破裂させる
     function break_down(){
-        $(".hahen_1").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_1").animate({top:"1500px"},10,"easeOutExpo");
-
-        $(".hahen_2").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_2").animate({top:"-1500px"},10,"easeOutExpo");
-
-        $(".hahen_3").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_3").animate({top:"1500px",left:"1500px"},10,"easeOutExpo");
-
-        $(".hahen_4").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_4").animate({top:"1500px",left:"-1500px"},10,"easeOutExpo");
-
-        $(".hahen_5").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_5").animate({top:"-1000px",left:"1500px"},10,"easeOutExpo");
-
-        $(".hahen_6").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_6").animate({top:"-1000px",left:"-1500px"},10,"easeOutExpo");
-
-        $(".hahen_7").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_7").animate({left:"1500px"},10,"easeOutExpo");
-
-        $(".hahen_8").css({ transition: '30s',transform: 'rotateX( 10800deg )' })
-        $(".hahen_8").animate({left:"-1500px"},10,"easeOutExpo");
-
+        time = ["10s","15s","20s","25s","30s"];
+        rotate = ["rotateX( 10800deg )","rotateY( 7200deg )","rotateZ( 5400deg )"];
+        px_t = ["0px","-1500px","-1250px","-1000px","-750px","750px","1000px","1250px","1500px"];
+        px_l = ["0px","-1500px","-1250px","-1000px","-750px","750px","1000px","1250px","1500px"];
+        for(var i = 1; i < 33; i++){
+            var time_rnd = Math.floor( Math.random() * (time.length) );
+            var rotate_rnd = Math.floor( Math.random() * (rotate.length) );
+            var t_rnd = Math.floor( Math.random() * (px_t.length) );
+            var l_rnd = Math.floor( Math.random() * (px_l.length) );
+            while(t_rnd == 0 && l_rnd == 0){
+                t_rnd = Math.floor( Math.random() * (px_t.length) );
+                l_rnd = Math.floor( Math.random() * (px_l.length) );                
+            }
+            $(".hahen_" + i).css({ transition: time[time_rnd],transform: rotate[rotate_rnd] });
+            $(".hahen_" + i).animate({top:px_t[t_rnd],left:px_l[l_rnd]},10,"easeOutQuart");
+        }
     }
