@@ -9,7 +9,7 @@ body{
 	display: flex;
 	width: 810px;
 	height:810px;
-	background-color: #888888;
+	background-color: red;
 	padding:25px;
 	flex-wrap: wrap;
 	justify-content:center;
@@ -259,6 +259,8 @@ body{
 	border: 20px solid transparent;
 	border-bottom: hidden;
 	border-top: 10px solid #888888;
+	top:0;
+	left:0;
 	border-bottom: hidden;
 }
 
@@ -266,18 +268,24 @@ body{
 	border: 10px solid transparent;
 	border-top: 20px solid #888888;
 	border-bottom: hidden;
+	top:0;
+	left:40px;
 }
 
 .hahen_3{
 	border: 5px solid transparent;
 	border-top: 10px solid #888888;
 	border-bottom: hidden;
+	top:80px;
+	left:60px;
 }
 
 .hahen_4{
 	border: 20px solid transparent;
 	border-top: 10px solid #888888;
 	border-bottom: hidden;
+	top:0;
+	left:70px;
 }
 
 .hahen_5{
@@ -285,12 +293,16 @@ body{
 	border-top: 13px solid #888888;
 	border-right: 2px;
 	border-bottom: hidden;
+	top:80px;
+	left:110px;
 }
 
 .hahen_6{
 	border: 3px solid transparent;
 	border-top: 20px solid #888888;
 	border-bottom: hidden;
+	top:0;
+	left:125px;
 }
 
 .hahen_7{
@@ -298,6 +310,8 @@ body{
 	border-top: 8px solid #888888;
 	border-left: 9px;
 	border-bottom: hidden;
+	top:80px;
+	left:128px;
 }
 
 .hahen_8{
@@ -305,6 +319,8 @@ body{
 	border-bottom: 8px solid #888888;
 	border-right: 19px;
 	border-top: hidden;
+	top:0;
+	left:134px;
 }
 
 .hahen_9{
@@ -312,6 +328,8 @@ body{
 	border-top: 11px solid #888888;
 	border-right: 12px;
 	border-bottom: hidden;
+	top:0;
+	left:146px;
 }
 
 .hahen_10{
@@ -319,6 +337,8 @@ body{
 	border-top: 5px solid #888888;
 	border-right: 3px;
 	border-bottom: hidden;
+	top:0;
+	left:162px;
 }
 
 .hahen_11{
@@ -326,6 +346,8 @@ body{
 	border-top: 5px solid #888888;
 	border-right: 3px;
 	border-bottom: hidden;
+	top:0;
+	left:182px;
 }
 
 .hahen_12{
@@ -333,6 +355,8 @@ body{
 	border-top: 15px solid #888888;
 	border-right: 13px;
 	border-bottom: hidden;
+	top:40px;
+	left:0;
 }
 
 .hahen_13{
@@ -340,6 +364,8 @@ body{
 	border-top: 11px solid #888888;
 	border-right: 16px;
 	border-bottom: hidden;
+	top:40px;
+	left:6px;
 }
 
 .hahen_14{
@@ -347,6 +373,8 @@ body{
 	border-top: 20px solid #888888;
 	border-right: 24px;
 	border-bottom: hidden;
+	top:80px;
+	left:15px;
 }
 
 .hahen_15{
@@ -354,6 +382,8 @@ body{
 	border-top: 24px solid #888888;
 	border-right: 13px;
 	border-bottom: hidden;
+	top:40px;
+	left:34px;
 }
 
 .hahen_16{
@@ -361,6 +391,8 @@ body{
 	border-top: 28px solid #888888;
 	border-right: 43px;
 	border-bottom: hidden;
+	top:40px;
+	left:60px;
 }
 
 .hahen_16{
@@ -368,6 +400,8 @@ body{
 	border-top: 6px solid #888888;
 	border-left: 11px;
 	border-bottom: hidden;
+	top:40px;
+	left:60px;
 }
 
 .hahen_17{
@@ -375,6 +409,8 @@ body{
 	border-top: 3px solid #888888;
 	border-left: 11px;
 	border-bottom: hidden;
+	top:40px;
+	left:64px;
 }
 
 .hahen_18{
@@ -382,6 +418,8 @@ body{
 	border-top: 36px solid #888888;
 	border-left: 11px;
 	border-bottom: hidden;
+	top:80px;
+	left:67px;
 }
 
 .hahen_19{
@@ -389,6 +427,8 @@ body{
 	border-top: 6px solid #888888;
 	border-left: 2px;
 	border-bottom: hidden;
+	top:40px;
+	left:81px;
 }
 
 .hahen_20{
@@ -396,6 +436,8 @@ body{
 	border-top: 2px solid #888888;
 	border-left: 23px;
 	border-bottom: hidden;
+	top:40px;
+	left:85px;
 }
 
 .hahen_21{
@@ -403,6 +445,8 @@ body{
 	border-top: 6px solid #888888;
 	border-right: 11px;
 	border-bottom: hidden;
+	top:40px;
+	left:97px;
 }
 
 .hahen_22{
@@ -410,6 +454,8 @@ body{
 	border-top: 14px solid #888888;
 	border-left: 8px;
 	border-bottom: hidden;
+	top:40px;
+	left:105px;
 }
 
 .hahen_23{
@@ -417,6 +463,8 @@ body{
 	border-top: 9px solid #888888;
 	border-right: 16px;
 	border-bottom: hidden;
+	top:40px;
+	left:115px;
 }
 
 .hahen_24{
@@ -424,6 +472,8 @@ body{
 	border-top: 24px solid #888888;
 	border-left: 18px;
 	border-bottom: hidden;
+	top:40px;
+	left:122px;
 }
 /* 特殊破片ここから */
 .hahen_25{
@@ -432,6 +482,8 @@ body{
 	border-right: 22px;
 	border-bottom: hidden;
 	-webkit-box-reflect: below -14px;
+	top:40px;
+	left:155px;
 }
 
 .hahen_26{
@@ -440,6 +492,8 @@ body{
 	border-right: 23px;
 	border-bottom: hidden;
 	-webkit-box-reflect: below -16px;
+	top:40px;
+	left:170px;
 }
 
 .hahen_27{
@@ -447,6 +501,8 @@ body{
 	border-top: 20px solid #888888;
 	border-bottom: hidden;
 	-webkit-box-reflect: below -24px;
+	top:120px;
+	left:0;
 }
 
 .hahen_28{
@@ -454,6 +510,8 @@ body{
 	border-top: 11px solid #888888;
 	border-right: 43px;
 	border-bottom: hidden;
+	top:120px;
+	left:55px;
 }
 
 .hahen_29{
@@ -461,6 +519,8 @@ body{
 	border-top: 1px solid #888888;
 	border-right: 2px;
 	border-bottom: hidden;
+	top:120px;
+	left:80px;
 }
 
 .hahen_30{
@@ -468,6 +528,8 @@ body{
 	border-top: 6px solid #888888;
 	border-right: 3px;
 	border-bottom: hidden;
+	top:120px;
+	left:120px;
 }
 
 .hahen_31{
@@ -475,6 +537,8 @@ body{
 	border-top: 44px solid #888888;
 	border-right: 18px;
 	border-bottom: hidden;
+	top:120px;
+	left:160px;
 }
 
 .hahen_32{
@@ -482,6 +546,8 @@ body{
 	border-top: 3px solid #888888;
 	border-right: 4px;
 	border-bottom: hidden;
+	top:120px;
+	left:90px;
 }
 
 
