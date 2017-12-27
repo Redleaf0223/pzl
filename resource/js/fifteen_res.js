@@ -8,17 +8,18 @@
                 count++;
             },time);
         }
-        for(var h = 1;h < 33;h++){
+        for(var h = 1;h < 67;h++){
             $(".item15").append('<div class="hahen hahen_' + h + '"></div>');
         }
         // $(".item15").append('<div id="crack"></div>')
         setTimeout(function(){
+            $(".hahen").css("z-index","100");
             break_down();
-        },4500);
+        },5000);
 
         setTimeout(function(){
             $(".image15").css("z-index","1");
-        },5000);
+        },5200);
     }
     
     // 左上から斜めのアレ
@@ -145,7 +146,7 @@
         rotate = ["rotateX( 10800deg )","rotateY( 7200deg )","rotateZ( 5400deg )"];
         px_t = ["0px","-1500px","-1250px","-1000px","-750px","750px","1000px","1250px","1500px"];
         px_l = ["0px","-1500px","-1250px","-1000px","-750px","750px","1000px","1250px","1500px"];
-        for(var i = 1; i < 33; i++){
+        for(var i = 1; i < 67; i++){
             var time_rnd = Math.floor( Math.random() * (time.length) );
             var rotate_rnd = Math.floor( Math.random() * (rotate.length) );
             var t_rnd = Math.floor( Math.random() * (px_t.length) );

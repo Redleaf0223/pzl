@@ -9,7 +9,7 @@ body{
 	display: flex;
 	width: 810px;
 	height:810px;
-	background-color: red;
+	background-color: #888888;
 	padding:25px;
 	flex-wrap: wrap;
 	justify-content:center;
@@ -252,7 +252,7 @@ body{
 	height: 0;
 	float: left;
 	transform-origin: 50% 50%;
-	z-index: 400;
+	z-index: -1;
 }
 
 .hahen_1{
@@ -395,7 +395,7 @@ body{
 	left:60px;
 }
 
-.hahen_16{
+.hahen_17{
 	border: 4px solid transparent;
 	border-top: 6px solid #888888;
 	border-left: 11px;
@@ -404,7 +404,7 @@ body{
 	left:60px;
 }
 
-.hahen_17{
+.hahen_18{
 	border: 3px solid transparent;
 	border-top: 3px solid #888888;
 	border-left: 11px;
@@ -413,7 +413,7 @@ body{
 	left:64px;
 }
 
-.hahen_18{
+.hahen_19{
 	border: 14px solid transparent;
 	border-top: 36px solid #888888;
 	border-left: 11px;
@@ -422,7 +422,7 @@ body{
 	left:67px;
 }
 
-.hahen_19{
+.hahen_20{
 	border: 4px solid transparent;
 	border-top: 6px solid #888888;
 	border-left: 2px;
@@ -431,7 +431,7 @@ body{
 	left:81px;
 }
 
-.hahen_20{
+.hahen_21{
 	border: 12px solid transparent;
 	border-top: 2px solid #888888;
 	border-left: 23px;
@@ -440,7 +440,7 @@ body{
 	left:85px;
 }
 
-.hahen_21{
+.hahen_22{
 	border: 8px solid transparent;
 	border-top: 6px solid #888888;
 	border-right: 11px;
@@ -449,7 +449,7 @@ body{
 	left:97px;
 }
 
-.hahen_22{
+.hahen_23{
 	border: 10px solid transparent;
 	border-top: 14px solid #888888;
 	border-left: 8px;
@@ -458,7 +458,7 @@ body{
 	left:105px;
 }
 
-.hahen_23{
+.hahen_24{
 	border: 7px solid transparent;
 	border-top: 9px solid #888888;
 	border-right: 16px;
@@ -467,7 +467,7 @@ body{
 	left:115px;
 }
 
-.hahen_24{
+.hahen_25{
 	border: 33px solid transparent;
 	border-top: 24px solid #888888;
 	border-left: 18px;
@@ -476,7 +476,7 @@ body{
 	left:122px;
 }
 /* 特殊破片ここから */
-.hahen_25{
+.hahen_26{
 	border: 14px solid transparent;
 	border-top: 18px solid #888888;
 	border-right: 22px;
@@ -486,7 +486,7 @@ body{
 	left:155px;
 }
 
-.hahen_26{
+.hahen_27{
 	border: 11px solid transparent;
 	border-top: 16px solid #888888;
 	border-right: 23px;
@@ -496,7 +496,7 @@ body{
 	left:170px;
 }
 
-.hahen_27{
+.hahen_28{
 	border: 24px solid transparent;
 	border-top: 20px solid #888888;
 	border-bottom: hidden;
@@ -505,7 +505,7 @@ body{
 	left:0;
 }
 
-.hahen_28{
+.hahen_29{
 	border: 19px solid transparent;
 	border-top: 11px solid #888888;
 	border-right: 43px;
@@ -514,7 +514,7 @@ body{
 	left:55px;
 }
 
-.hahen_29{
+.hahen_30{
 	border: 4px solid transparent;
 	border-top: 1px solid #888888;
 	border-right: 2px;
@@ -523,7 +523,7 @@ body{
 	left:80px;
 }
 
-.hahen_30{
+.hahen_31{
 	border: 6px solid transparent;
 	border-top: 6px solid #888888;
 	border-right: 3px;
@@ -532,7 +532,7 @@ body{
 	left:120px;
 }
 
-.hahen_31{
+.hahen_32{
 	border: 5px solid transparent;
 	border-top: 44px solid #888888;
 	border-right: 18px;
@@ -541,7 +541,7 @@ body{
 	left:160px;
 }
 
-.hahen_32{
+.hahen_33{
 	border: 16px solid transparent;
 	border-top: 3px solid #888888;
 	border-right: 4px;
@@ -549,9 +549,301 @@ body{
 	top:120px;
 	left:90px;
 }
+/* 特殊破片ここまで */
 
+.hahen_34{
+	border: 20px solid transparent;
+	border-bottom: hidden;
+	border-top: 10px solid #888888;
+	top:180px;
+	left:160px;
+	border-bottom: hidden;
+}
 
+.hahen_35{
+	border: 10px solid transparent;
+	border-top: 20px solid #888888;
+	border-bottom: hidden;
+	top:160px;
+	left:160px;
+}
 
+.hahen_36{
+	border: 5px solid transparent;
+	border-top: 10px solid #888888;
+	border-bottom: hidden;
+	top:120px;
+	left:160px;
+}
 
+.hahen_37{
+	border: 20px solid transparent;
+	border-top: 10px solid #888888;
+	border-bottom: hidden;
+	top:120px;
+	left:80px;
+}
+
+.hahen_38{
+	border: 15px solid transparent;
+	border-top: 13px solid #888888;
+	border-right: 2px;
+	border-bottom: hidden;
+	top:140px;
+	left:110px;
+}
+
+.hahen_39{
+	border: 3px solid transparent;
+	border-top: 20px solid #888888;
+	border-bottom: hidden;
+	top:160px;
+	left:125px;
+}
+
+.hahen_40{
+	border: 6px solid transparent;
+	border-top: 8px solid #888888;
+	border-left: 9px;
+	border-bottom: hidden;
+	top:180px;
+	left:128px;
+}
+
+.hahen_41{
+	border: 11px solid transparent;
+	border-bottom: 8px solid #888888;
+	border-right: 19px;
+	border-top: hidden;
+	top:150px;
+	left:134px;
+}
+
+.hahen_42{
+	border: 13px solid transparent;
+	border-top: 11px solid #888888;
+	border-right: 12px;
+	border-bottom: hidden;
+	top:140px;
+	left:146px;
+}
+
+.hahen_43{
+	border: 10px solid transparent;
+	border-top: 5px solid #888888;
+	border-right: 3px;
+	border-bottom: hidden;
+	top:152px;
+	left:162px;
+}
+
+.hahen_44{
+	border: 10px solid transparent;
+	border-top: 5px solid #888888;
+	border-right: 3px;
+	border-bottom: hidden;
+	top:130px;
+	left:182px;
+}
+
+.hahen_45{
+	border: 6px solid transparent;
+	border-top: 15px solid #888888;
+	border-right: 13px;
+	border-bottom: hidden;
+	top:140px;
+	left:0;
+}
+
+.hahen_46{
+	border: 9px solid transparent;
+	border-top: 11px solid #888888;
+	border-right: 16px;
+	border-bottom: hidden;
+	top:140px;
+	left:6px;
+}
+
+.hahen_47{
+	border: 19px solid transparent;
+	border-top: 20px solid #888888;
+	border-right: 24px;
+	border-bottom: hidden;
+	top:170px;
+	left:15px;
+}
+
+.hahen_48{
+	border: 26px solid transparent;
+	border-top: 24px solid #888888;
+	border-right: 13px;
+	border-bottom: hidden;
+	top:160px;
+	left:34px;
+}
+
+.hahen_49{
+	border: 36px solid transparent;
+	border-top: 28px solid #888888;
+	border-right: 43px;
+	border-bottom: hidden;
+	top:160px;
+	left:60px;
+}
+
+.hahen_50{
+	border: 4px solid transparent;
+	border-top: 6px solid #888888;
+	border-left: 11px;
+	border-bottom: hidden;
+	top:140px;
+	left:60px;
+}
+
+.hahen_51{
+	border: 3px solid transparent;
+	border-top: 3px solid #888888;
+	border-left: 11px;
+	border-bottom: hidden;
+	top:140px;
+	left:64px;
+}
+
+.hahen_52{
+	border: 14px solid transparent;
+	border-top: 36px solid #888888;
+	border-left: 11px;
+	border-bottom: hidden;
+	top:160px;
+	left:67px;
+}
+
+.hahen_53{
+	border: 4px solid transparent;
+	border-top: 6px solid #888888;
+	border-left: 2px;
+	border-bottom: hidden;
+	top:140px;
+	left:81px;
+}
+
+.hahen_54{
+	border: 12px solid transparent;
+	border-top: 2px solid #888888;
+	border-left: 23px;
+	border-bottom: hidden;
+	top:140px;
+	left:85px;
+}
+
+.hahen_55{
+	border: 8px solid transparent;
+	border-top: 6px solid #888888;
+	border-right: 11px;
+	border-bottom: hidden;
+	top:140px;
+	left:97px;
+}
+
+.hahen_56{
+	border: 10px solid transparent;
+	border-top: 14px solid #888888;
+	border-left: 8px;
+	border-bottom: hidden;
+	top:140px;
+	left:105px;
+}
+
+.hahen_57{
+	border: 7px solid transparent;
+	border-top: 9px solid #888888;
+	border-right: 16px;
+	border-bottom: hidden;
+	top:140px;
+	left:115px;
+}
+
+.hahen_58{
+	border: 33px solid transparent;
+	border-top: 24px solid #888888;
+	border-left: 18px;
+	border-bottom: hidden;
+	top:140px;
+	left:122px;
+}
+/* 特殊破片ここから */
+.hahen_59{
+	border: 14px solid transparent;
+	border-top: 18px solid #888888;
+	border-right: 22px;
+	border-bottom: hidden;
+	-webkit-box-reflect: below -14px;
+	top:140px;
+	left:155px;
+}
+
+.hahen_60{
+	border: 11px solid transparent;
+	border-top: 16px solid #888888;
+	border-right: 23px;
+	border-bottom: hidden;
+	-webkit-box-reflect: below -16px;
+	top:140px;
+	left:170px;
+}
+
+.hahen_61{
+	border: 24px solid transparent;
+	border-top: 20px solid #888888;
+	border-bottom: hidden;
+	-webkit-box-reflect: below -24px;
+	top:170px;
+	left:0;
+}
+
+.hahen_62{
+	border: 19px solid transparent;
+	border-top: 11px solid #888888;
+	border-right: 43px;
+	border-bottom: hidden;
+	top:160px;
+	left:55px;
+}
+
+.hahen_63{
+	border: 4px solid transparent;
+	border-top: 1px solid #888888;
+	border-right: 2px;
+	border-bottom: hidden;
+	top:160px;
+	left:80px;
+}
+
+.hahen_64{
+	border: 6px solid transparent;
+	border-top: 6px solid #888888;
+	border-right: 3px;
+	border-bottom: hidden;
+	top:160px;
+	left:120px;
+}
+
+.hahen_65{
+	border: 5px solid transparent;
+	border-top: 44px solid #888888;
+	border-right: 18px;
+	border-bottom: hidden;
+	top:160px;
+	left:160px;
+}
+
+.hahen_66{
+	border: 16px solid transparent;
+	border-top: 3px solid #888888;
+	border-right: 4px;
+	border-bottom: hidden;
+	top:170px;
+	left:90px;
+}
 
 /* 特殊破片ここまで */
