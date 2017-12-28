@@ -111,7 +111,7 @@
 
     }
 
-    // へび
+    // へび 右上から
     function clear_animation_E(){
         var arr = [3,2,1,0,4,5,6,7,11,10,9,8,12,13,14];
         var count = 0;
@@ -126,18 +126,13 @@
         //     $(".item15").append('<div class="hahen hahen_' + h + '"></div>');
         // }
         setTimeout(function(){
-            $(".item15").css({ transition: 'all 8s',transform: 'rotateZ( 3600deg )' });
+            $(".image15").css("z-index","1");
+            $(".grays").css({ transition: 'all 4s',transform: 'rotateZ( 3600deg )' });
+            $(".image15").css({ transition: 'all 4s',transform: 'rotateZ( 3600deg )' });
+            $(".grays").css({ transition: '4s',opacity: '0' });
             count++;
         },4000);
 
-        // $(".item15").append('<div id="crack"></div>')
-        setTimeout(function(){
-            // break_down();
-        },4500);
-
-        setTimeout(function(){
-            // $(".image15").css("z-index","1");
-        },5000);
     }
 
     // ランダムに破裂させる
