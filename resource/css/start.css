@@ -1,0 +1,29 @@
+#cover{
+	z-index:9999;
+	width:100vw;
+	height:100vh;
+	background-color: black;
+	position:absolute;
+}
+
+#load_box{
+	z-index:10000;
+	width:75vw;
+	height:35vh;
+	background-color: #0000FF;
+	margin: auto;
+	margin-top: 32.5vh;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.ball{
+	border-radius: 50%;
+	width: 10vh;
+	height: 10vh;
+	background-color: #00FF00;
+	z-index: 10001;
+	position: relative;
+}
